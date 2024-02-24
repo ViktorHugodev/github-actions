@@ -15,5 +15,6 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: ${{ matrix.go }}
+      - run: go mod init teste
       - run: go test
       - run: go run math.go
